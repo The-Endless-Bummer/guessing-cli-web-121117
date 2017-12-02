@@ -17,7 +17,10 @@ def run_guessing_game
   if [1, 2, 3, 4, 5, 6].include?(entry)
     random = rand(1..6)
     if entry == random
-
+      puts "You guessed the correct number!"
+    else
+      puts "The computer guessed #{random}."
+      run_guessing_game
     end
   end
 end
