@@ -1,3 +1,4 @@
+=begin
 def run_guessing_game
   puts "Guess a number between 1 and 6."
   entry = gets.chomp
@@ -15,6 +16,7 @@ def run_guessing_game
     run_guessing_game
   end
 end
+=end
 
 def run_guessing_game
   entry = 0
