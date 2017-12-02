@@ -1,13 +1,5 @@
-def prompt
-  puts "Guess a number between 1 and 6."
-end
-
-def exit_guessing_game
-  puts "Goodbye!"
-end
-
 def run_guessing_game
-  prompt
+  puts "Guess a number between 1 and 6."
   entry = gets.chomp
   if [1, 2, 3, 4, 5, 6].include?(entry)
     random = rand(1..6)
@@ -18,7 +10,7 @@ def run_guessing_game
       run_guessing_game
     end
   elsif entry == 'exit'
-    exit_guessing_game
+    puts "Goodbye!"
   else
     run_guessing_game
   end
