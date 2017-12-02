@@ -5,9 +5,9 @@ def run_guessing_game
   random = 1
   while entry != random
     puts "Guess a number between 1 and 6."
-    entry = gets.chomp.to_i
+    entry = gets.chomp
     random = rand(1..6)
-    if entry == random
+    if entry.to_i == random
       puts "You guessed the correct number!"
       break
     elsif entry == 'exit'
