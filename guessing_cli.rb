@@ -15,3 +15,18 @@ def run_guessing_game
     run_guessing_game
   end
 end
+
+def run_guessing_game
+  entry = 0
+  random = 1
+  while entry != random
+    puts "Guess a number between 1 and 6."
+    entry = gets.chomp
+    random = rand(1..6)
+    if entry == random
+      puts "You guessed the correct number!"
+      break
+    elsif entry == 'exit'
+      
+    
+end
