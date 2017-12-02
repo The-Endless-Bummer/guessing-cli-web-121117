@@ -7,11 +7,8 @@ def exit_guessing_game
 end
 
 def run_guessing_game
-  entry = nil
-  while entry != 'exit'
-    prompt
-    entry = gets.chomp
-  end
+  prompt
+  entry = gets.chomp
   if [1, 2, 3, 4, 5, 6].include?(entry)
     random = rand(1..6)
     if entry == random
@@ -20,7 +17,7 @@ def run_guessing_game
       puts "The computer guessed #{random}."
       run_guessing_game
     end
-  else
+  elsif
     exit_guessing_game
   end
 end
